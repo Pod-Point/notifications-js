@@ -1,20 +1,34 @@
-# Node Package Template
+# Notifications JS
 
-A template repository for a Node.js package using TypeScript.
+[![Build Status](https://travis-ci.com/Pod-Point/notifications-js.svg?branch=master)](https://travis-ci.com/Pod-Point/notifications-js)
+[![codecov](https://codecov.io/gh/Pod-Point/notifications-js/branch/master/graph/badge.svg)](https://codecov.io/gh/Pod-Point/notifications-js)
+
+A notifications service for JS.
 
 ## Usage
 
-See the following link for how to create a repository from a template:
-https://help.github.com/en/articles/creating-a-repository-from-a-template
-
-### Installation
-
-To install the latest version of this templates  dev dependencies, run the following command:
+To install this package, run the following command:
 ```bash
-npm install --save-dev @types/faker @types/jest @pod-point/tslint-config-podpoint-base faker jest ts-jest tslint typescript
+npm install @pod-point/notifications-js
+```
+
+Once installed, simply create a new instance of the Notifications service and begin using it e.g.
+```js
+import { SNS } from '@pod-point/notifications-js';
+
+const notificationService = new SNS();
+
+const notification = await notificationService.publish('message', 'topic');
 ```
 
 ## Development
+
+### Installation
+
+To install this packages dependencies, run the following command:
+```bash
+npm install
+```
 
 ### Testing
 
