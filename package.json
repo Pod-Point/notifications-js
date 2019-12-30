@@ -19,7 +19,7 @@
   ],
   "scripts": {
     "build": "node_modules/.bin/tsc",
-    "lint": "node_modules/.bin/tslint 'src/**/*.{ts,tsx}'",
+    "lint": "node_modules/.bin/eslint 'src/**/*.{ts,tsx}'",
     "lint:fix": "npm run lint -- --fix",
     "test": "node_modules/.bin/jest --watch",
     "test:coverage": "node_modules/.bin/jest --coverage --runInBand --ci"
